@@ -19,8 +19,19 @@ StudentMapperFX is a unique application built with JavaFX for calculating and ma
 - **Change Password** - Option to change the login password for added security.
 
 ### Installation
-1. Ensure JavaFX is installed on your system.
-2. **Run the application** using:
+1. Make sure JavaFX is installed on your system.
+2. Download the JAR file from the following link: [Download StudentMapperFX JAR](https://drive.google.com/file/d/1PDKLYosLZdlQlRLLPM11EOjS0Nd2Nw_w/view?usp=sharing)
+3. **Run the application** using:
    ```bash
-   java -jar StudentMapperApp.jar
+   java -jar ClassMap.jar
 
+### Usage
+After logging in, users can:
+
+View and update the student table.
+Add new student mappings and save the data.
+Print the table data for easy reference.
+Adjust interface colors and change the login password as needed.
+
+### Credits
+Developed by [Your Name] for teachers and elementary school education teams.
