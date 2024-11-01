@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="428.0" prefWidth="288.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.tala.ControllerChangeDefStories">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+         <children>
+            <ComboBox fx:id="classB" prefHeight="23.0" prefWidth="133.0" />
+            <Label text="כיתה ב" />
+         </children>
+         <VBox.margin>
+            <Insets top="15.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+         <children>
+            <ComboBox fx:id="classC" prefHeight="23.0" prefWidth="133.0" />
+            <Label text="כיתה ג" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+         <children>
+            <ComboBox fx:id="classD" prefHeight="23.0" prefWidth="133.0" />
+            <Label text="כיתה ד" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+         <children>
+            <ComboBox fx:id="classE" prefHeight="23.0" prefWidth="133.0" />
+            <Label text="כיתה ה" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+         <children>
+            <ComboBox fx:id="classF" prefHeight="23.0" prefWidth="133.0" />
+            <Label text="כיתה ו" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+         <children>
+            <Button fx:id="exit" mnemonicParsing="false" onAction="#exit" text="ביטול" />
+            <Button mnemonicParsing="false" onAction="#save" text="שמור" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

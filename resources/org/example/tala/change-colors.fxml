@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="257.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.tala.ControllerChangeColors">
+   <children>
+      <ColorPicker fx:id="colorPicker" layoutX="27.0" layoutY="48.0" onAction="#change" promptText="improperColor" />
+      <CheckBox fx:id="checkBox" layoutX="51.0" layoutY="90.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#change" text="כיתוב לבן">
+         <font>
+            <Font size="13.0" />
+         </font></CheckBox>
+      <Button layoutX="411.0" layoutY="191.0" mnemonicParsing="false" onAction="#save" prefHeight="35.0" prefWidth="71.0" text="אישור" />
+      <Button layoutX="265.0" layoutY="191.0" mnemonicParsing="false" onAction="#exit" prefHeight="35.0" prefWidth="71.0" text="ביטול" />
+      <RadioButton fx:id="improper" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="473.0" layoutY="51.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#clickButton" selected="true" text="בלתי תקין" textAlignment="RIGHT" textOverrun="LEADING_ELLIPSIS">
+         <toggleGroup>
+            <ToggleGroup fx:id="but" />
+         </toggleGroup>
+         <font>
+            <Font size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="high" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="219.0" layoutY="51.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#clickButton" prefHeight="19.0" prefWidth="53.0" text="גובה" textAlignment="RIGHT" textOverrun="LEADING_ELLIPSIS" toggleGroup="$but">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="low" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="446.0" layoutY="127.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#clickButton" text="נמוך מהממוצע" textAlignment="RIGHT" textOverrun="LEADING_ELLIPSIS" toggleGroup="$but">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="veryHigh" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="192.0" layoutY="90.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#clickButton" text="גבוה מאוד" textAlignment="RIGHT" textOverrun="LEADING_ELLIPSIS" toggleGroup="$but">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="belowAverage" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="295.0" layoutY="51.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#clickButton" text="תקין מתחת לממוצע" textAlignment="RIGHT" textOverrun="LEADING_ELLIPSIS" toggleGroup="$but">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="aboveAverage" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="337.0" layoutY="127.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#clickButton" text="מעל לממוצע" textAlignment="RIGHT" textOverrun="LEADING_ELLIPSIS" toggleGroup="$but">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="veryLow" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="473.0" layoutY="90.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#clickButton" text="נמוך מאוד" textAlignment="RIGHT" textOverrun="LEADING_ELLIPSIS" toggleGroup="$but">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="average" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="371.0" layoutY="91.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#clickButton" text="ממוצע" textAlignment="RIGHT" textOverrun="LEADING_ELLIPSIS" toggleGroup="$but">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </RadioButton>
+      <Button layoutX="128.0" layoutY="191.0" mnemonicParsing="false" onAction="#defaultBut" prefHeight="35.0" prefWidth="77.0" text="ברירת מחדל">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

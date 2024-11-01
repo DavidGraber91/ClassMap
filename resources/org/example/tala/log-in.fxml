@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="648.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.tala.ControllerLog">
+   <left>
+      <HBox fx:id="myHBox" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="324.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="myImage" blendMode="SRC_ATOP" cache="true" depthTest="DISABLE" fitHeight="500.0" fitWidth="324.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" smooth="false" HBox.hgrow="ALWAYS">
+               <image>
+                  <Image url="@icons/Designer.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="NONE" />
+               </cursor>
+            </ImageView>
+         </children>
+      </HBox>
+   </left>
+   <right>
+      <HBox fx:id="hBox" alignment="CENTER" prefHeight="500.0" prefWidth="324.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="324.0" spacing="20.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label alignment="TOP_CENTER" prefHeight="48.0" prefWidth="229.0" text="ברוכים הבאים" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font size="33.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="name" text="Label" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="45.0" prefWidth="313.0" text="אנא הכנס את שם המשתמש והסיסמה להתחברות">
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="passLogIn" alignment="CENTER_RIGHT" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#logIn" prefHeight="25.0" prefWidth="162.0" promptText="סיסמה" VBox.vgrow="SOMETIMES">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Button mnemonicParsing="false" onAction="#logIn" text="התחברות">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </right>
+</BorderPane>

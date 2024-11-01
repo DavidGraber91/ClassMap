@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="663.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.tala.ControllerDiagnosis">
+   <children>
+      <TextField fx:id="nameText" alignment="CENTER_RIGHT" layoutX="252.0" layoutY="102.0" />
+      <ChoiceBox fx:id="classText" layoutX="300.0" layoutY="160.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="100.0" />
+      <TextField fx:id="singleWortNumText" alignment="CENTER_RIGHT" layoutX="300.0" layoutY="217.0" onKeyPressed="#kay" prefHeight="25.0" prefWidth="100.0" />
+      <TextField fx:id="singleWortTimeText" alignment="CENTER_RIGHT" layoutX="86.0" layoutY="217.0" onKeyPressed="#kay" prefHeight="25.0" prefWidth="100.0" />
+      <TextField fx:id="readStoryNumText" alignment="CENTER_RIGHT" layoutX="300.0" layoutY="290.0" onKeyPressed="#kay" prefHeight="25.0" prefWidth="100.0" />
+      <TextField fx:id="readStoryTimeText" alignment="CENTER_RIGHT" layoutX="84.0" layoutY="290.0" onKeyPressed="#kay" prefHeight="25.0" prefWidth="100.0" />
+      <TextField fx:id="movementsNumText" alignment="CENTER_RIGHT" layoutX="300.0" layoutY="373.0" onKeyPressed="#kay" prefHeight="25.0" prefWidth="100.0" />
+      <TextField fx:id="movementsTimeText" alignment="CENTER_RIGHT" layoutX="85.0" layoutY="373.0" onKeyPressed="#kay" prefHeight="25.0" prefWidth="100.0" />
+      <TextField fx:id="writeNumText" alignment="CENTER_RIGHT" layoutX="300.0" layoutY="450.0" onKeyPressed="#kay" prefHeight="25.0" prefWidth="100.0" />
+      <TextField fx:id="writeTimeText" alignment="CENTER_RIGHT" layoutX="84.0" layoutY="450.0" onKeyPressed="#kay" prefHeight="25.0" prefWidth="100.0" />
+      <TextField fx:id="phonemicText" alignment="CENTER_RIGHT" layoutX="300.0" layoutY="530.0" onKeyPressed="#kay" prefHeight="25.0" prefWidth="100.0" />
+      <TextArea fx:id="remarksText" layoutX="46.0" layoutY="507.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="125.0" prefWidth="149.0" />
+      <Button fx:id="butSave" disable="true" layoutX="294.0" layoutY="589.0" mnemonicParsing="false" onAction="#Save" text="שמור" />
+      <Label layoutX="336.0" layoutY="80.0" text="שם התלמיד" />
+      <Label layoutX="255.0" layoutY="195.0" text="מילים בודדות - כמות שגיאות" wrapText="true" />
+      <Label layoutX="53.0" layoutY="195.0" text="מילים בודדות - זמן בשניות" />
+      <Label layoutX="253.0" layoutY="268.0" text="* קריאת טקסט - כמות שגיאות" />
+      <Label layoutX="48.0" layoutY="268.0" text="* קריאת טקסט - זמן בשניות" />
+      <Label layoutX="244.0" layoutY="352.0" text="קריאת עיצורים - כמות שגיאות" />
+      <Label layoutX="42.0" layoutY="352.0" text="קריאת עיצורים - זמן בשניות" />
+      <Label layoutX="283.0" layoutY="428.0" text="הכתבה - כמות שגיאות" />
+      <Label layoutX="80.0" layoutY="428.0" text="הכתבה - זמן בשניות" />
+      <Label layoutX="252.0" layoutY="507.0" text="ערנות פונמית - כמות שגיאות" />
+      <Label layoutX="159.0" layoutY="488.0" text="הערות" />
+      <Button layoutX="367.0" layoutY="589.0" mnemonicParsing="false" onAction="#cancel" text="ביטול" />
+      <Button fx:id="butCal" disable="true" layoutX="225.0" layoutY="589.0" mnemonicParsing="false" onAction="#onlyCalculate" prefHeight="25.0" prefWidth="45.0" text="חשב" />
+      <Text fx:id="remarksStores" fill="RED" layoutX="234.0" layoutY="645.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Label layoutX="345.0" layoutY="22.0" text="מיפוי">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateText" contentDisplay="BOTTOM" layoutX="70.0" layoutY="40.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="17.0" text="Label" />
+      <Label fx:id="errorInt" alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="60.0" layoutY="56.0" nodeOrientation="LEFT_TO_RIGHT" textAlignment="JUSTIFY" textFill="RED">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="373.0" layoutY="137.0" text="כיתה" />
+      <ChoiceBox fx:id="choiceStory" layoutX="68.0" layoutY="160.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="117.0" />
+      <Label layoutX="155.0" layoutY="138.0" text="סיפור" />
+      <ListView fx:id="listTimer" layoutX="441.0" layoutY="213.0" prefHeight="218.0" prefWidth="191.0" style="-fx-border-width: 2; -fx-border-color: #a1a1a1;" />
+      <VBox layoutX="441.0" layoutY="130.0" prefHeight="87.0" prefWidth="191.0" style="-fx-border-color: #a1a1a1; -fx-border-width: 5; -fx-border-radius: 5;">
+         <children>
+            <Label id=" #69ea55" fx:id="timerLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="66.0" prefWidth="191.0" style="-fx-background-color: lightblue; -fx-background-radius: 5;" text="00:00:00" textFill="#9e0606">
+               <font>
+                  <Font name="Bauhaus 93" size="35.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="14.0" prefWidth="181.0" style="-fx-border-color: #a1a1a1; -fx-border-width: 5 0 0 0;">
+               <children>
+                  <Button fx:id="butShale" disable="true" mnemonicParsing="false" onAction="#whitTimer" prefHeight="25.0" prefWidth="58.0" text="פצל" />
+                  <Button fx:id="butStop" disable="true" mnemonicParsing="false" onAction="#stopTimer" prefHeight="25.0" prefWidth="62.0" text="עצור" />
+                  <Button mnemonicParsing="false" onAction="#startTimer" prefHeight="25.0" prefWidth="65.0" text="התחל" />
+               </children>
+               <VBox.margin>
+                  <Insets top="-5.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
