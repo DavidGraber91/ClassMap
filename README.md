@@ -20,7 +20,7 @@ StudentMapperFX is a unique application built with JavaFX for calculating and ma
 
 ### Installation
 1. Make sure JavaFX is installed on your system.
-2. Download the JAR file from the following link: [Download StudentMapperFX JAR](https://drive.google.com/file/d/1PDKLYosLZdlQlRLLPM11EOjS0Nd2Nw_w/view?usp=sharing)
+2. Download the JAR file from the following link: [Download ClassMap JAR](https://drive.google.com/file/d/1PDKLYosLZdlQlRLLPM11EOjS0Nd2Nw_w/view?usp=sharing)
 3. **Run the application** using:
    ```bash
    java -jar ClassMap.jar
