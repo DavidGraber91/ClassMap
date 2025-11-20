@@ -34,4 +34,4 @@ Print the table data for easy reference.
 Adjust interface colors and change the login password as needed.
 
 ### Credits
-Developed by [Your Name] for teachers and elementary school education teams.
+Developed by [David] for teachers and elementary school education teams.
